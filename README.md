@@ -1,5 +1,5 @@
 # Tutorial Catalog
-This project aims to list tutorial videos that is shorter than 2 hours. 
+This project aims to list tutorial videos that are shorter than 2 hours. 
 
 The idea is simple. 
 
