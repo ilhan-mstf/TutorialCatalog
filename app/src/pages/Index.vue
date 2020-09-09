@@ -1,7 +1,24 @@
 <template>
   <q-page>
     <div class="row justify-center q-mt-lg">
-      <div class="col-6">
+      <div class="col-3">
+        <div class="q-ml-lg q-mr-sm">
+          <h1 class="text-h6">Video Tutorial Catalog</h1>
+          <h2 class="text-body2">
+            Hand-picked catalog of tutorial videos that are shorter than 2 hours.
+          </h2>
+          <q-btn
+            color="black"
+            type="a"
+            href="https://github.com/ilhan-mstf/TutorialCatalog"
+            target="_blank"
+            label="Github Project"
+            size="sm"
+            icon="launch"
+          />
+        </div>
+      </div>
+      <div class="col-6 q-mb-lg">
         <q-input
           outlined
           v-model="searchText"
@@ -15,6 +32,7 @@
           <q-card-section>
             <div class="text-h6">{{ item.title }}</div>
             <div class="text-subtitle2">{{ item.subTitle }}</div>
+            <div class="text-caption">by {{ item.author }} on {{ item.publisher }}</div>
             <q-badge
               v-for="(tag, index) in item.tags"
               :key="index"
@@ -31,27 +49,13 @@
           </q-card-section>
         </q-card>
       </div>
+      <div class="col-3"></div>
     </div>
   </q-page>
 </template>
 
 <script>
-const videoTutorialData = [
-  {
-    id: 'vtPkZShrvXQ',
-    title: 'Spring Boot Tutorial for Beginners (Java Framework)',
-    subTitle: 'Course by Amigoscode on freeCodeCamp.org',
-    tags: ['Spring', 'Java', 'API', 'Amigoscode', 'freeCodeCamp.org'],
-    videoSrc: 'https://www.youtube.com/embed/vtPkZShrvXQ'
-  },
-  {
-    id: 'Ke7Tr4RgRTs',
-    title: 'Spring Boot - Getting started with Spring Boot (EASY)',
-    subTitle: 'Course by Amigoscode',
-    tags: ['Spring', 'Java', 'API', 'Amigoscode'],
-    videoSrc: 'https://www.youtube.com/embed/Ke7Tr4RgRTs'
-  }
-]
+import videoTutorialData from 'src/data/videos'
 
 export default {
   name: 'PageIndex',
