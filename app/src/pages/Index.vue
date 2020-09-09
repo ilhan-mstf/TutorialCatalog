@@ -3,10 +3,13 @@
     <div class="row justify-center q-mt-lg">
       <div class="col-3">
         <div class="q-ml-lg q-mr-sm">
-          <h1 class="text-h6">Video Tutorial Catalog</h1>
-          <h2 class="text-body2">
+          <h1 class="text-h5">Video Tutorial Catalog</h1>
+          <h2 class="text-body1">
             Hand-picked catalog of tutorial videos that are shorter than 2 hours.
           </h2>
+          <p>It is hard know every tool, framework, language, etc. However, you can learn the basics of them quickly under 2 hours.</p>
+          <p>Your time is valuable.Therefore, only focus on what matters most.</p>
+          <p>The aim is to provide best quality resources to learn <strong>important concepts of a topic</strong> without being lost in the detail and too many resources.</p>
           <q-btn
             color="black"
             type="a"
